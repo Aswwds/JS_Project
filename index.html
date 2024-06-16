@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <dialog id="dialog">
+        <p>Введите название пресета</p>
+        <form method="dialog">
+          <input type="text" name="name" id="name"/>
+          <button id="ok">OK</button>
+        </form>
+      </dialog>
+    <div class="eq">
+    <h4>Эквалайзер</h4>
+    <div class="eq_top panel">
+        <canvas id="canvas" class="canvas"></canvas>
+    </div>
+
+    <h4>Свойства</h4>
+    <div class="eq_bottom panel">
+        <div class="line">
+            <span class="line-label">Пресет</span>
+            <select id="preset">
+                <option>По умолчанию</option>
+            </select>
+            <input type="button" id="save" value="Сохранить"/>
+            <input type="button" id="load" value="Загрузить"/>
+            <input type="button" id="remove_preset" value="-"/>
+        </div>
+        <hr>
+        <div class="points_settings" id="points_settings"></div>
+        <input type="button" id="add" value="Добавить"/>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
